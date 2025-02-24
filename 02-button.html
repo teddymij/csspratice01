@@ -57,40 +57,87 @@
       button {
         text-decoration: none;
         padding: 10px 30px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      /* row1 column1 */
+      .buttons-row1-column1 {
+        background-color: #14c6de;
+        padding: 10px 10px;
+        font-size: 12px;
+        letter-spacing: -0.8px;
+      }
+      .icon {
+        width: 18px;
+      }
+      /* row2 column2 */
+      .buttons-row1-column2 {
+        background-color: #167ee7;
+        padding: 12px 20px;
+        font-size: 14px;
+        letter-spacing: 0px;
+        border-radius: 5px;
+      }
+      /* row2 column3 */
+      .buttons-row1-column3 {
+        background-color: #32b5c6;
+        padding: 12px 15px;
+        font-size: 12px;
+        letter-spacing: -0.5px;
+      }
+      /* row2 column3 */
+      .buttons-row1-column4 {
+        background-color: #000000;
+        padding: 12px 15px;
+        font-size: 12px;
+        letter-spacing: -0.5px;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <button class="buttons buttons-row1-column1">ADD TO CART</button>
-        <button class="buttons buttons-row1-column1">Request a Demo</button>
-        <button class="buttons buttons-row1-column1">SHOP MATTRESSES</button>
-        <button class="buttons buttons-row1-column1">TRY NOW FOR</button>
+        <button class="buttons buttons-row1-column1">
+          ADD TO CART
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </button>
+        <button class="buttons buttons-row1-column2">Request a Demo</button>
+        <button class="buttons buttons-row1-column3">
+          SHOP MATTRESSES
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </button>
+        <button class="buttons buttons-row1-column4">TRY NOW FOR</button>
       </div>
-      <div class="row">
-        <button class="buttons buttons-row1-column1">ADD TO CART</button>
-        <button class="buttons buttons-row1-column1">Request a Demo</button>
-        <button class="buttons buttons-row1-column1">SHOP MATTRESSES</button>
-        <button class="buttons buttons-row1-column1">TRY NOW FOR</button>
-      </div>
-      <div class="row">
-        <button class="buttons buttons-row1-column1">ADD TO CART</button>
-        <button class="buttons buttons-row1-column1">Request a Demo</button>
-        <button class="buttons buttons-row1-column1">SHOP MATTRESSES</button>
-        <button class="buttons buttons-row1-column1">TRY NOW FOR</button>
-      </div>
-      <div class="row">
-        <button class="buttons buttons-row1-column1">ADD TO CART</button>
-        <button class="buttons buttons-row1-column1">Request a Demo</button>
-        <button class="buttons buttons-row1-column1">SHOP MATTRESSES</button>
-        <button class="buttons buttons-row1-column1">TRY NOW FOR</button>
-      </div>
-      <div class="row">
-        <button class="buttons buttons-row1-column1">ADD TO CART</button>
-        <button class="buttons buttons-row1-column1">Request a Demo</button>
-        <button class="buttons buttons-row1-column1">SHOP MATTRESSES</button>
-        <button class="buttons buttons-row1-column1">TRY NOW FOR</button>
       </div>
     </div>
   </body>
