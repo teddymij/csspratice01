@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 - Element Text</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+      Main color : #364fc7 | #3b5bdb
+      Grey color : #212529 | #343a40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        color: #212529;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        background-color: #ebe9e9;
+        letter-spacing: 0.2px;
+        color: #212529;
+      }
+      .container {
+        width: 1050px;
+        margin: 50px auto;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+      }
+      /* heroes */
+      .heros {
+        width: 800px;
+        height: 350px;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("image/herosBG.jpg");
+        background-size: cover;
+        color: white;
+        padding: 40px 0 0 50px;
+      }
+      .heros h2 {
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .heros h1 {
+        margin-top: 18px;
+      }
+      .heros button {
+        margin-top: 28px;
+        font-weight: 600;
+        padding: 10px 35px;
+        color: #212529;
+      }
+      /* amazon input */
+      header .navAmazon {
+        display: flex;
+        /* justify-content: center; */
+        gap: 20px;
+        background-color: #15191f;
+        color: #fff;
+        font-size: 14px;
+        padding: 5px 5px;
+      }
+      .container-search {
+        flex: 1;
+        display: flex;
+        gap: 0;
+        overflow: hidden;
+        border: 1px solid #585858;
+        border-radius: 8px;
+      }
+      .container-search .amazon-select {
+        width: 50px;
+        text-align: center;
+        background-color: #f3f3f3;
+        color: #495057;
+        border: none;
+      }
+      .container-search .amazon-search {
+        flex: 1;
+        border: none;
+        border-left: 1px solid #c4c4c4;
+        padding: 20px;
+        outline: none;
+      }
+      .container-search .search-icone {
+        padding: 10px;
+        border: none;
+        background-color: #fdbe69;
+        cursor: pointer;
+      }
+      .container-search .search-icone .icone-search {
+        width: 24px;
+        height: 24px;
+      }
+      .icone {
+        width: 24px;
+        height: 24px;
+        transform: translate(0, 5px);
+      }
+      .navAmazon .deliverTo {
+        display: flex;
+        align-items: center;
+      }
+      /* select design */
+      .container-deliver {
+        background-color: #fff;
+        width: 50%;
+        text-transform: uppercase;
+        padding: 15px;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .container-deliver .deliver {
+        text-transform: uppercase;
+        padding: 8px 10px;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 8px;
+      }
+      .deliver option:hover {
+        background-color: black;
+        color: #fff;
+      }
+      .container-deliver .mention {
+        text-transform: none;
+
+        font-size: 14px;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="heros">
+          <h2>New year, New possibilities</h2>
+          <h1>
+            Invest in Yourself <br />
+            With a Wildist <br />
+            Photography Workshop
+          </h1>
+          <button>Get Started</button>
+        </div>
+      </div>
+      <header>
+        <nav class="navAmazon">
+          <img src="image/amazon.png" alt="" />
+          <div class="deliverTo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icone"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+
+            <p>
+              Deliver to <br />
+              <strong>Portugal</strong>
+            </p>
+          </div>
+          <div class="container-search">
+            <select class="amazon-select">
+              <option value="all">All</option>
+              <option value="books">Books</option>
+              <option value="electronics">Electronics</option>
+            </select>
+            <input type="text" class="amazon-search" />
+            <button class="search-icone">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icone-search"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <div class="container-deliver">
+        <p class="deliver-every">deliver every</p>
+        <select class="deliver" name="deliver" id="">
+          <option value="15">15 days</option>
+          <option value="30">30 days</option>
+          <option value="45">45 days</option>
+          <option value="60">60 days</option>
+        </select>
+        <p class="mention">
+          Due to the pandemic, our delivery times may be longer than usual
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
